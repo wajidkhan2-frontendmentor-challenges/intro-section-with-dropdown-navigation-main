@@ -1,0 +1,94 @@
+/* mobile */
+
+
+.layout-main {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+/* .header */
+.footer {
+    text-align: center;
+}
+
+/* container sizing */
+.nav-bar-section, .text-icon-section {
+    --max-container-width: 1110px;
+    --container-padding: 1rem;
+    /* --container-padding: 16px; */
+
+    width: min(var(--max-container-width), 100% - ( var( --container-padding) * 2));
+    margin-inline: auto;
+    /* margin-bottom: 80px; */
+}
+
+/* header and navigaito */
+.nav-bar-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+@media only screen and (min-width: 69.375em ) /* min-width:  1110px */ {
+    
+    /* container sizing */
+    .nav-bar-section {
+        /* --max-container-width: 1110px; */
+        --max-container-width: 1548px;
+        --container-padding: 1rem;
+        /* --container-padding: 16px; */
+
+        width: min(var(--max-container-width), 100% - ( var( --container-padding) * 2));
+        margin-inline: auto;
+        /* margin-bottom: 80px; */
+    }
+
+    .hero-section {
+        --max-container-width: 1110px;
+        --container-padding: 1rem;
+        /* --container-padding: 16px; */
+
+        width: min(var(--max-container-width), 100% - ( var( --container-padding) * 2));
+        margin-inline: auto;
+        /* margin-bottom: 80px; */
+    }
+    
+    /* header and navigation */
+    .nav-mobile-wraper {
+        width: 90%;
+    }
+    
+    .ul-nav, .navigation-child {
+        display: flex;
+    }
+
+    .navigation-child {
+        justify-content: space-between;
+    }
+
+    /* main and hero */
+    .hero-section {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .banner-section {
+        order: 1;
+    }
+}
+
+/* .container-wrapper {
+    --max-container-width: 1110px;
+    --container-padding: 1rem;
+    /* --container-padding: 16px; *
+
+    width: min(var(--max-container-width), 100% - ( var( --container-padding) * 2));
+    margin-inline: auto;
+    margin-bottom: 80px;
+}
+
+.no_scroll {
+    position: fixed;
+} */

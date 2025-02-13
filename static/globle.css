@@ -1,0 +1,115 @@
+:root {
+    --pp: 1px;
+
+    /* primary colors */
+    --clr-primay-100-val: ; /*  */
+
+    /* Neutral colors */
+    --clr-neutral-100: hsl(0, 0%, 98%);  /* Almost White */
+    --clr-neutral-200: hsl(0, 0%, 41%); /* Medium Gray */
+    --clr-neutral-300: hsl(0, 0%, 8%); /* Almost Black */
+
+
+    /* typography */
+    --f-family: "Epilogue";
+    --f-size-para: 18px; /* 18 */
+    --f-size-body: 16px; /* 18 */
+    --f-weight-medium: 500;
+    --f-weight-bold: 700;
+
+}
+
+@font-face {
+    font-family: "Epilogue";
+    src: url("./Epilogue/Epilogue-VariableFont_wght.ttf");
+    font-style: normal;
+}
+
+
+
+body {
+    font-family: var(--f-family);
+    font-style: normal;
+    font-size: var(--f-size-body);
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-neutral-100);
+}
+
+/* Chrome, Safari, Edge, Opera */
+/* input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button,
+input[type=number] /* Firefox * {
+    /* Chrome, Safari, Edge, Opera *
+    /* -webkit-appearance: none; *
+
+    /* Firefox *
+    /* -moz-appearance: textfield;
+    margin: 0; *
+} */
+
+legend {
+    padding: 0;
+    display: table;
+}
+fieldset {
+    border: 0;
+    padding: 0.01em 0 0 0;
+    margin: 0;
+    min-width: 0;
+}
+body:not(:-moz-handler-blocked) fieldset {
+    display: table-cell;
+}
+
+button {
+    font-size: inherit;
+    font-family: inherit;
+    color: inherit;
+}
+
+h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+input[type=text],input[type=number] {
+    font-family: inherit;
+    font-size: inherit;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+
+@media only screen and (min-width: 69.375em ) /* min-width:  1110px */ {
+
+}
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;            /* 3 */
+}
+
+
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+	clip: auto !important;
+	-webkit-clip-path: none !important;
+		clip-path: none !important;
+	height: auto !important;
+	margin: auto !important;
+	overflow: visible !important;
+	width: auto !important;
+	white-space: normal !important;
+} 
