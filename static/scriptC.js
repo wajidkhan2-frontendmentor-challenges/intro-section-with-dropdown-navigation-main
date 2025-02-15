@@ -1,15 +1,22 @@
 $(document).ready(function() {
     let nav_bar_open = false;
     let mobile_open_btn = $("#mobileNavOpenBtn");
+    let page_navbar = $("#page-navbar");
+    let body = $("body");
 
     mobile_open_btn.click( function() {
-        mobile_open_btn.attr("aria-expanded", "true");
-        $("#page-navbar").attr("data-open", "true");
+        nav_bar_open = true
+        mobile_open_btn.attr("aria-expanded", nav_bar_open);
+        page_navbar.attr("data-open", nav_bar_open);
+        body.addClass("no_scroll");
     });
 
     $("#mobileNavCloseBtn").click( function() {
-        mobile_open_btn.attr("aria-expanded", "false");
-        $("#page-navbar").attr("data-open", "false");
+        nav_bar_open = false;
+        mobile_open_btn.attr("aria-expanded", nav_bar_open);
+        page_navbar.attr("data-open", nav_bar_open);
+        mobile_open_btn.focus();
+        body.removeClass("no_scroll");
     } );
 
     let bool_prim_state = false;
@@ -36,7 +43,44 @@ $(document).ready(function() {
         }
     })
 
+
+
+//     page_navbar.on('transitionend webkitTransitionEnd oTransitionEnd', function () {
+//         // your event handler
+//         console.log("transitionend")
+//     });
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

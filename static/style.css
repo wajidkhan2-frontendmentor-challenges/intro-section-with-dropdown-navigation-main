@@ -1,18 +1,22 @@
 .imgblock { display: block; width: 100%; }
 .btnstrip { background-color: transparent; margin: 0; padding: 0; border: none;}
 
+/* [data-open=false] { display: none;} */
+
 /* header and navigation */
 .nav-bar-section {
     padding-block: 25px;
 }
 
 .navigation {
+    --mobile-div-width: 70%;
+
     box-sizing: border-box;
     background-color: var(--clr-neutral-100);
     position: fixed;
     right: 0;
     top: 0;
-    width: 70%;
+    width: var(--mobile-div-width);
     height: 100vh;
     padding: 25px;
 }
@@ -155,7 +159,7 @@
     /* header and navigation */
     .navigation {
         position: static;
-        width: 100%;
+        width: 90%;
         height: min-content;
         padding: 0;
     }
