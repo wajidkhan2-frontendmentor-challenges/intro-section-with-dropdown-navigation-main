@@ -21,7 +21,86 @@
 			<section class="nav-bar-section">
 				<a href="#" class="logo-link"><img  class="imgblock" src="./images/logo.svg" alt="Site logo"></a>
 
-				<button class="btnstrip mobile-nav-open" id="mobileNavOpenBtn" aria-labelledby="navigation-open" aria-controls="page-navbar" aria-expanded="false">
+				<nav class="nav-tag">
+					<button class="btnstrip mobile-nav-open" id="mobileNavOpenBtn" aria-labelledby="navigation-open" aria-controls="page-navbar" aria-expanded="false">
+						<span id="navigation-open" hidden="">navigation menu open</span>
+						<img class="imgblock" src="./images/icon-menu.svg" alt="">
+					</button>
+
+					<div class="mobile-nav-opn-bg-overlay" ></div>
+					<div class="navigation-dialog" role="dialog" aria-labelledby="navigation-label">
+						<span id="navigation-label" hidden="">navigation</span>
+						<button class="btnstrip mobile-nav-close" id="mobileNavCloseBtn" aria-labelledby="navigation-close" aria-controls="page-navbar">
+							<span id="navigation-close" hidden="">navigation menu close</span>
+							<img class="imgblock" src="./images/icon-close-menu.svg" alt="">
+						</button>
+						
+						<div class="nav-main-list">
+							<ul class="navigation-primary ul-nav">
+								<li class="nav-li dropdown" data-open="false">
+									<button class="btnstrip C-dropdown-btn" id="dropdown-prim-open-close-btn" aria-controls="dropdown-list-prim" aria-expanded="false">
+										Features
+										<span class="arrow-icon arrow-down" style="
+											-webkit-mask: url(./images/icon-arrow-down.svg) no-repeat center;
+											mask: url(./images/icon-arrow-down.svg) no-repeat center;
+										"></span>
+										<span class="arrow-icon arrow-up" style="
+											-webkit-mask: url(./images/icon-arrow-up.svg) no-repeat center;
+											mask: url(./images/icon-arrow-up.svg) no-repeat center;
+										"></span>
+									</button>
+									<ul class="dropdown-list prim" id="dropdown-list-prim">
+										<li class="dropdown-li">
+											<a class="dropdown-link" href="#"><img class="dropdown-icon" src="./images/icon-todo.svg" alt=""> Todo List</a>
+										</li>
+										<li class="dropdown-li">
+											<a class="dropdown-link" href="#"><img class="dropdown-icon" src="./images/icon-calendar.svg" alt=""> Calendar</a>
+										</li>
+										<li class="dropdown-li">
+											<a class="dropdown-link" href="#"><img class="dropdown-icon" src="./images/icon-reminders.svg" alt=""> Reminders</a>
+										</li>
+										<li class="dropdown-li">
+											<a class="dropdown-link" href="#"><img class="dropdown-icon" src="./images/icon-planning.svg" alt=""> Planning</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-li dropdown" data-open="false">
+									<button class="btnstrip C-dropdown-btn" id="dropdown-secnd-open-close-btn" aria-controls="page-navbar" aria-expanded="false">
+										Company
+										<span class="arrow-icon arrow-down" style="
+											-webkit-mask: url(./images/icon-arrow-down.svg) no-repeat center;
+											mask: url(./images/icon-arrow-down.svg) no-repeat center;
+										"></span>
+										<span class="arrow-icon arrow-up" style="
+											-webkit-mask: url(./images/icon-arrow-up.svg) no-repeat center;
+											mask: url(./images/icon-arrow-up.svg) no-repeat center;
+										"></span>
+									</button>
+									<ul class="dropdown-list secnd">
+										<li class="dropdown-li">
+											<a class="dropdown-link" href="#">History</a>
+										</li>
+										<li class="dropdown-li">
+											<a class="dropdown-link" href="#">Our Team</a>
+										</li>
+										<li class="dropdown-li">
+											<a class="dropdown-link" href="#">Blog</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-li"><a class="nav-link" href="#">Careers</a></li>
+								<li class="nav-li"><a class="nav-link" href="#">About</a></li>
+							</ul>
+
+							<ul class="navigation-secondary ul-nav">
+								<li class="nav-li"><a class="nav-link login" href="#">Login</a></li>
+								<li class="nav-li"><a class="nav-link register" href="#">Register</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<!-- <button class="btnstrip mobile-nav-open" id="mobileNavOpenBtn" aria-labelledby="navigation-open" aria-controls="page-navbar" aria-expanded="false">
 					<span id="navigation-open" hidden="">navigation menu open</span>
 					<img class="imgblock" src="./images/icon-menu.svg" alt="">
 				</button>
@@ -81,7 +160,7 @@
 							<li class="nav-li"><a class="nav-link register" href="#">Register</a></li>
 						</ul>
 					</div>
-				</nav>
+				</nav> -->
 
 				
 			</section>
@@ -95,7 +174,7 @@
 						<img src="./images/image-hero-mobile.png" alt="">
 					</picture>
 				</div>
-				<div class="text-icon-section text-icon-container">
+				<div class="text-icon-section text-icon-container" tabindex="0">
 					<h1 class="hero-title"><span>Make</span> remote work</h1>
 					<p class="hero-para">
 						Get your team in sync, no matter your location. Streamline processes, 
@@ -103,12 +182,12 @@
 					</p>
 					<a class="more-link" href="#">Learn more</a>
 
-					<div class="icon-section">
-						<a href="#"><img class="icon-img" src="./images/client-databiz.svg" alt=""></a>
-						<a href="#"><img class="icon-img" src="./images/client-audiophile.svg" alt=""></a>
-						<a href="#"><img class="icon-img" src="./images/client-meet.svg" alt=""></a>
-						<a href="#"><img class="icon-img" src="./images/client-maker.svg" alt=""></a>
-					</div>
+					<ul class="icon-section">
+						<li class="icon-sec-li"><a href="#"><img class="icon-img" src="./images/client-databiz.svg" alt="databiz"></a></li>
+						<li class="icon-sec-li"><a href="#"><img class="icon-img" src="./images/client-audiophile.svg" alt="audiophile"></a></li>
+						<li class="icon-sec-li"><a href="#"><img class="icon-img" src="./images/client-meet.svg" alt="meet"></a></li>
+						<li class="icon-sec-li"><a href="#"><img class="icon-img" src="./images/client-maker.svg" alt="maker"></a></li>
+					</ul>
 				</div>
 			</section>
 		</main>

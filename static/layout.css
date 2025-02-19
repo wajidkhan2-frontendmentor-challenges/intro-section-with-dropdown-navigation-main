@@ -1,6 +1,4 @@
 /* mobile */
-
-
 .layout-main {
     min-height: 100vh;
     display: grid;
@@ -44,7 +42,7 @@
     .nav-bar-section {
         /* --max-container-width: 1110px; */
         --max-container-width: 1548px;
-        --container-padding: 1rem;
+        --container-padding: 2.5rem;
         /* --container-padding: 16px; */
 
         width: min(var(--max-container-width), 100% - ( var( --container-padding) * 2));
@@ -63,15 +61,15 @@
     }
     
     /* header and navigation */
-    /* .navigation {
+    .nav-tag {
         width: 90%;
-    } */
+    }
     
-    .ul-nav, .navigation-child {
+    .ul-nav, .nav-main-list {
         display: flex;
     }
 
-    .navigation-child {
+    .nav-main-list {
         justify-content: space-between;
     }
 

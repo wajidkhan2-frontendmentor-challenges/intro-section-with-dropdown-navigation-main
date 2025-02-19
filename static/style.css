@@ -8,7 +8,7 @@
     padding-block: 25px;
 }
 
-.navigation {
+.navigation-dialog {
     --mobile-div-width: 70%;
 
     box-sizing: border-box;
@@ -56,6 +56,17 @@
     font-size: 16px;
 }
 
+.arrow-icon {
+    display: inline-block;
+    width: 10px;
+    height: 6px;
+    background-color: var(--clr-neutral-200);
+}
+
+/* 
+display: inline-block;
+background-color: red;
+*/
 
 .dropdown-list {
     list-style: none;
@@ -116,18 +127,17 @@
 
 .hero-title {
     color: var(--clr-neutral-300);
-    font-size: 38px;
+    font-size: 35px;
 }
 
 .hero-para {
-    font-size: var(--f-size-para);
+    font-size: var(--f-size-body);
     font-weight: var(--f-weight-medium);
     color: var(--clr-neutral-200);
-    line-height: 1.4;
-    width: 90%;
+    line-height: 1.6;
 
     margin-inline: auto;
-    margin-block: 25px;
+    margin-block: 23px;
 }
 
 .more-link {
@@ -135,18 +145,24 @@
     display: inline-block;
     background-color: var(--clr-neutral-300);
     color: var(--clr-neutral-100);
-    padding: 16px 25px;
+    padding: 14px 20px;
+    border: 2px solid var(--clr-neutral-300);
     border-radius: 17px;
     font-weight: var(--f-weight-bold);
 }
 
 .icon-section {
-    margin-top: 55px;
+    margin-top: 46px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 0;
 
     margin-bottom: 100px;
+}
+.icon-section,
+.icon-sec-li {
+    list-style: none;
 }
 
 .icon-img {
@@ -157,11 +173,11 @@
 
 @media only screen and (min-width: 69.375em ) /* min-width:  1110px */ {
     /* header and navigation */
-    .navigation {
+    .navigation-dialog {
         position: static;
-        width: 90%;
         height: min-content;
         padding: 0;
+        width: 100%;
     }
 
     .mobile-nav-opn-bg-overlay,
@@ -171,17 +187,30 @@
     }
 
     .ul-nav { margin: 0; }
+
     .navigation-primary .nav-link, 
     .navigation-primary .C-dropdown-btn,
     .navigation-secondary .nav-link,
-    .navigation-secondary .nav-link.register,
-    .nav-link {
+    .navigation-secondary .nav-link.register {
         box-sizing: border-box;
         margin: 0;
         padding-block: 10px;
-        padding-inline: 15px;
-        /* width: 10px; */
+        /* padding-inline: 15px; */
         text-align: center;
+    }
+
+    .navigation-primary .nav-link, 
+    .navigation-primary .C-dropdown-btn {
+        padding-inline: 15px;
+    }
+
+    .navigation-secondary .nav-link,
+    .navigation-secondary .nav-link.register {
+        padding-inline: 15px;
+    }
+
+    .navigation-secondary .nav-link.register {
+        margin-left: 25px;
     }
 
     .dropdown {
@@ -205,12 +234,13 @@
     }
 
 
+
     /* main and hero */
     .hero-section {
         margin-top:50px;
     }
 
-    .banner-section { width: 40%; }
+    .banner-section { width: 43%; }
     .text-icon-section, .icon-section { margin: 0; }
     .text-icon-section {
         width: 49%;
@@ -225,16 +255,18 @@
     .hero-para {
         margin-inline: 0;
         margin-block: 45px;
-        
+        font-size: var(--f-size-para);
         width: 484px;
     }
 
     .more-link {
-        font-size: var(--f-size-para);
-        padding: 18px 35px;
+        
+        padding: 17px 30px;
     }
+
+    
     .icon-section {
-        margin-top: 70px;
+        margin-top: 105px;
     }
 
     .icon-img {
