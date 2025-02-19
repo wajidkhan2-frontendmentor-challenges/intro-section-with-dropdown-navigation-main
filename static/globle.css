@@ -1,5 +1,4 @@
 :root {
-    --pp: 1px;
 
     /* primary colors */
     --clr-primay-100-val: ; /*  */
@@ -12,8 +11,8 @@
 
     /* typography */
     --f-family: "Epilogue";
-    --f-size-para: 18px; /* 18 */
-    --f-size-body: 16px; /* 18 */
+    --f-size-para: 1.125rem; /* 18px */
+    --f-size-body: 1rem; /* 16px */
     --f-weight-medium: 500;
     --f-weight-bold: 700;
 

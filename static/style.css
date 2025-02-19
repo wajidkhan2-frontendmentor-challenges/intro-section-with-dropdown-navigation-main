@@ -5,7 +5,7 @@
 
 /* header and navigation */
 .nav-bar-section {
-    padding-block: 25px;
+    padding-block: 1.563rem; /* 25px */
 }
 
 .navigation-dialog {
@@ -18,7 +18,7 @@
     top: 0;
     width: var(--mobile-div-width);
     height: 100vh;
-    padding: 25px;
+    padding: 1.563rem; /* 25px */
 }
 
 .mobile-nav-opn-bg-overlay {
@@ -51,9 +51,10 @@
     text-decoration: none;
     width: 100%;
     text-align: left;
-    padding-block: 10px;
+    padding-block: 0.625rem; /* 10px */
     font-weight: var(--f-weight-medium);
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
+    cursor: pointer;
 }
 
 .arrow-icon {
@@ -70,7 +71,7 @@ background-color: red;
 
 .dropdown-list {
     list-style: none;
-    padding-left: 26px;
+    padding-left: 1.625rem; /* 26px */
 }
 
 .dropdown-li .dropdown-link {
@@ -82,29 +83,29 @@ background-color: red;
 .dropdown-link {
     display: flex;
     align-items: center;
-    margin-block: 10px;
+    margin-block: 0.625rem;; /* 10px */
 }
 
 .dropdown-icon {
-    width: 15px;
+    width: 0.938rem; /* 15px */
 }
 
 .dropdown-link .dropdown-icon {
-    margin-right: 13px;
+    margin-right: 0.813rem; /* 13px */
 }
 
 
 .navigation-secondary {
-    margin-top: 20px;
+    margin-top: 1.25rem; /* 20px */
     text-align: center;
 }
 .navigation-secondary .nav-link {
     display: block;
-    padding-block: 13px;
+    padding-block: 0.813rem; /* 13px */
     color: var(--clr-neutral-200);
     text-decoration: none;
     font-weight: var(--f-weight-medium);
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
 }
 
 .navigation-secondary .nav-link.register {
@@ -122,12 +123,12 @@ background-color: red;
 
 .text-icon-section {
     text-align: center;
-    margin-top: 48px;
+    margin-top: 3rem; /* 48px */
 }
 
 .hero-title {
     color: var(--clr-neutral-300);
-    font-size: 35px;
+    font-size: 2.188rem; /* 35px */
 }
 
 .hero-para {
@@ -137,7 +138,7 @@ background-color: red;
     line-height: 1.6;
 
     margin-inline: auto;
-    margin-block: 23px;
+    margin-block: 1.438rem; /* 23px */
 }
 
 .more-link {
@@ -145,20 +146,20 @@ background-color: red;
     display: inline-block;
     background-color: var(--clr-neutral-300);
     color: var(--clr-neutral-100);
-    padding: 14px 20px;
+    padding: 0.875rem 1.25rem; /*14px 20px */
     border: 2px solid var(--clr-neutral-300);
-    border-radius: 17px;
+    border-radius: 1.063rem; /* 17px */
     font-weight: var(--f-weight-bold);
 }
 
 .icon-section {
-    margin-top: 46px;
+    margin-top: 2.875rem; /* 46px */
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0;
 
-    margin-bottom: 100px;
+    margin-bottom: 6.25rem; /* 100px */
 }
 .icon-section,
 .icon-sec-li {
@@ -194,23 +195,23 @@ background-color: red;
     .navigation-secondary .nav-link.register {
         box-sizing: border-box;
         margin: 0;
-        padding-block: 10px;
+        padding-block: 0.625rem; /* 10px */
         /* padding-inline: 15px; */
         text-align: center;
     }
 
     .navigation-primary .nav-link, 
     .navigation-primary .C-dropdown-btn {
-        padding-inline: 15px;
+        padding-inline: 0.938rem; /* 15px */
     }
 
     .navigation-secondary .nav-link,
     .navigation-secondary .nav-link.register {
-        padding-inline: 15px;
+        padding-inline: 0.938rem; /* 15px */
     }
 
     .navigation-secondary .nav-link.register {
-        margin-left: 25px;
+        margin-left: 1.563rem; /* 25px */
     }
 
     .dropdown {
@@ -218,7 +219,7 @@ background-color: red;
     }
     .dropdown-list {
         background-color: var(--clr-neutral-100);
-        padding: 14px 20px;
+        padding: 0.875rem 1.25rem; /* 14px 20px */
         border-radius: 10px;
         box-shadow: 1px -1px 16px -7px var(--clr-neutral-200);
         position: absolute;
@@ -237,7 +238,7 @@ background-color: red;
 
     /* main and hero */
     .hero-section {
-        margin-top:50px;
+        margin-top:  3.125rem; /* 50px */
     }
 
     .banner-section { width: 43%; }
@@ -248,25 +249,25 @@ background-color: red;
     }
 
     .hero-title {
-        font-size: 80px;
+        font-size: 5rem; /* 80px */
         font-weight: var(--f-weight-bold);
+        white-space: nowrap;
     }
     .hero-title span { display: block;}
     .hero-para {
         margin-inline: 0;
-        margin-block: 45px;
+        margin-block: 2.813rem; /* 45px */
         font-size: var(--f-size-para);
-        width: 484px;
+        width: 30.25rem; /* 484px */
     }
 
     .more-link {
-        
-        padding: 17px 30px;
+        padding: 1.063rem 1.875rem; /* 17px 30px */
     }
 
     
     .icon-section {
-        margin-top: 105px;
+        margin-top: 6.563rem; /* 105px */
     }
 
     .icon-img {

@@ -11,7 +11,7 @@
 
 /* container sizing */
 .nav-bar-section, .text-icon-section {
-    --max-container-width: 1110px;
+    --max-container-width: 69.375rem; /* 1110px */
     --container-padding: 1rem;
     /* --container-padding: 16px; */
 
@@ -41,7 +41,7 @@
     /* container sizing */
     .nav-bar-section {
         /* --max-container-width: 1110px; */
-        --max-container-width: 1548px;
+        --max-container-width: 96.75rem; /* 1548px */
         --container-padding: 2.5rem;
         /* --container-padding: 16px; */
 
@@ -51,8 +51,8 @@
     }
 
     .hero-section {
-        --max-container-width: 1110px;
-        --container-padding: 1rem;
+        --max-container-width: 69.375rem; /* 1110px */
+        --container-padding: 2.5rem;
         /* --container-padding: 16px; */
 
         width: min(var(--max-container-width), 100% - ( var( --container-padding) * 2));
